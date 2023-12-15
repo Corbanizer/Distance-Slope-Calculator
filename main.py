@@ -11,16 +11,16 @@ dif_x= x2 - x1
 dif_y= y2 - y1
 p('Slope =',dif_y,'/',dif_x)
 p('Slope =',dif_y / dif_x)
-in_root = dif_x ** 2 + dif_y ** 2
-if in_root.is_integer():
+in_r = dif_x ** 2 + dif_y ** 2
+if in_r.is_integer():
     coef = 1           
-    root_num = in_root 
+    root_num = in_r 
     for i in range(int(in_root), 0, -1): 
         coef = math.sqrt(i)
-        if coef.is_integer() and in_root % i == 0:
-                root_num = in_root / i
+        if coef.is_integer() and in_r % i == 0:
+                root_num = in_r / i
                 break
     if coef != 1:
-        p('Distance = sqrt of', in_root, '=', coef, 'sqrt', root_num)
+        p('Distance = sqrt of', in_r, '=', coef, 'sqrt', root_num)
     else:
-        p('Distance = sqrt of', in_root)
+        p('Distance = sqrt of', in_r)
