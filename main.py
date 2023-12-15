@@ -10,7 +10,7 @@ y1 = f(i('Enter (y1) --> '))
 x2 = f(i('Enter (x2) --> '))
 y2 = f(i('Enter (y2) --> '))
 p(" ")
-start = t.time()
+s = t.time()
 dif_x = x2 - x1
 dif_y = y2 - y1
 _s = 'Slope ='
@@ -31,6 +31,6 @@ if in_r.is_integer():
     p(_d, in_r, '=', coef, 'sqrt', r_num)
   else:
     p(_d, in_r)
-end = t.time()
+e = t.time()
 p(" ")
-p("Time to calculate =",end-start,"seconds")
+p("Time to calculate =",e-s,"seconds")
